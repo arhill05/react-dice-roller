@@ -1,3 +1,4 @@
+import "./DiceList.css";
 import IndividualDie from "./IndividualDie";
 
 const DiceList = (props) => {
@@ -10,7 +11,7 @@ const DiceList = (props) => {
     <IndividualDie key={"dice-" + index} diceValue={diceValue} />
   ));
 
-  return <div>{diceList}</div>;
+  return <div className="dice-list">{diceList}</div>;
 };
 
 export default DiceList;

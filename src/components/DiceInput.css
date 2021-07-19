@@ -1,0 +1,12 @@
+.dice-input {
+  margin: 16px;
+}
+
+.dice-input button,
+.dice-input input {
+  margin: 0 4px;
+}
+
+.dice-input-validation-error {
+  color: red;
+}

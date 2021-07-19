@@ -19,6 +19,9 @@ class App extends Component {
     return (
       <div className="App">
         <DiceInput onDiceRoll={this.onDiceRoll} />
+        {this.state.currentDiceRollResult && (
+          <div>Total: {this.state.currentDiceRollResult.total}</div>
+        )}
         <DiceList
           diceValues={this.state.currentDiceRollResult?.individualDiceValues}
         />
